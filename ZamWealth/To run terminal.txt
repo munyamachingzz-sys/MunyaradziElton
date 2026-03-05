@@ -1,0 +1,10 @@
+in order to run the file {
+    1. enter terminal;
+    2. type in nano zamwealth_quest.py;
+        2.1.copy and paste the code into the Nano Text Editor.
+        2.2. Thn press the following
+           Ctrl + O
+           Enter
+           Ctrl + X
+    3. python3 zamwealth_quest.py ,then enter
+}

@@ -1,0 +1,13 @@
+What I Learned
+
+Working on ZamWealth taught me:
+
+Python programming fundamentals – including input/output handling, data types, and control structures.
+
+Structuring interactive programs that respond dynamically to user input.
+
+Basic financial literacy concepts like budgeting, saving, and investment planning.
+
+Debugging and testing code to ensure programs run smoothly and handle unexpected input.
+
+Documentation skills – creating clear instructions and explanations for users and future developers

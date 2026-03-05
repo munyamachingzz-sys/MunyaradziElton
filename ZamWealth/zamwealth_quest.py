@@ -1,0 +1,68 @@
+print("====================================")
+print("      Welcome to ZamWealth Quest    ")
+print("====================================")
+
+# User Registration
+name = input("Enter your name: ")
+category = input("Enter income category (Student/Trader/Civil Servant/Entrepreneur): ")
+income = float(input("Enter your monthly income (ZMW): "))
+
+level = 1
+savings = 0
+
+print("\nHello", name, "! You are starting at Level 1.")
+print("Neighbourhood: Kabulonga Gardens")
+
+# Level 1 – Budget Simulation
+expenses = float(input("Enter your total monthly expenses: "))
+savings = income - expenses
+
+if savings < 0:
+    print("Warning: You are spending more than your income!")
+else:
+    print("Your monthly savings is:", savings)
+
+# Unlock Level 2
+if savings >= 500:
+    level = 2
+    print("\nLevel 2 Unlocked – Woodlands Heights")
+else:
+    print("\nYou need at least ZMW 500 savings to unlock Level 2.")
+
+# Level 2 – Saving for Investment
+if level >= 2:
+    invest_amount = float(input("Enter amount you want to invest: "))
+
+    if invest_amount <= savings:
+        level = 3
+        print("Level 3 Unlocked – Levy Financial District")
+    else:
+        print("Not enough savings for investment.")
+
+# Level 3 – Investment Growth
+if level >= 3:
+    amount = float(input("Enter investment amount: "))
+    rate = float(input("Enter annual interest rate (example 0.10 for 10%): "))
+    years = int(input("Enter number of years: "))
+
+    future_value = amount * ((1 + rate) ** years)
+
+    print("Investment value after", years, "years is:", future_value)
+
+    level = 4
+
+# Level 4 – Entrepreneurship Simulation
+if level >= 4:
+    revenue = float(input("Enter business revenue: "))
+    costs = float(input("Enter business costs: "))
+
+    profit = revenue - costs
+
+    print("Business profit is:", profit)
+
+    if profit > 0:
+        print("Congratulations! Your business is profitable.")
+    else:
+        print("Your business is making losses.")
+
+print("\nThank you for using ZamWealth Quest!")
